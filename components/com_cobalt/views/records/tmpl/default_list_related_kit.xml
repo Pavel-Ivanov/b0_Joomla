@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+	<fields name="tmpl_params">
+		<fieldset name="params" label="Params">
+			<field name="field_id_descr" client="list" type="meresourcesfields" key="id" default="" filters="'textarea','text','html'" label="Description field" />
+			<field name="field_id_gallery" client="list" type="meresourcesfields" key="id" default="" filters="'gallery','image'" label="Gallery field" />
+			<field name="columns" type="list" default="3" label="Columns">
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="6">6</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

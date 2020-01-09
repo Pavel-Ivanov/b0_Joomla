@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="b0_move_to_accessories" addfieldpath="/libraries/mint/forms/fields" label="Перенос в Аксессуары"
+              description="Выберите категорию и запустите инструмент">
+        <field name="category" type="list" label="Из категории">
+            <option value="Чехлы">Чехлы</option>
+            <option value="Ковры">Ковры</option>
+            <option value="Багажники">Багажники</option>
+            <option value="Инструмент">Инструмент</option>
+            <option value="Литература">Литература</option>
+            <option value="Прочее">Прочее</option>
+        </field>
+        <!--<field name="search_limit_start" type="text" default="0" label="Limit start" />-->
+        <field name="search_limit_number" type="text" default="0" label="Количество записей"
+               description="Если 0, то все записи"/>
+    </fieldset>
+</form>

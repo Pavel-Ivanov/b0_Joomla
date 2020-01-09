@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>b0_default</name>
+	<author>Pavel Ivanov</author>
+	<version>1.0.0</version>
+	<description>Template Accessory full page</description>
+
+	<fields name="tmpl_params">
+		<fieldset name="general" label="Общие">
+			<field name="item_time_format" type="list" default="l, d F Y" label="Формат даты" >
+				<option value="l, d F Y">Tuesday, 30 December 2007</option>
+				<option value="d F Y">30 December 2007</option>
+				<option value="d.m.Y">30.12.2007</option>
+			</field>
+			<field name="item_print" type="radio" class="btn-group" default="0" label="Иконка печати" >
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+		</fieldset>
+	</fields>
+
+	<fields name="tmpl_core">
+		<fieldset name="analytics" label="Аналитика">
+			<field name="yandex" type="radio" class="btn-group" default="0" label="Yandex" >
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="yandex_id" type="text" maxlength="20" default="" label="ID счетчика Yandex" />
+			<field name="yandex_goal" type="text" maxlength="20" default="" label="ID цели Yandex" />
+			<field name="google" type="radio" class="btn-group" default="0" label="Google" >
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="google_goal" type="text" maxlength="20" default="" label="ID цели Google Tag Manager" />
+		</fieldset>
+		<fieldset name="modules" label="Модули">
+			<field name="module_1" type="text" maxlength="3" required="true" default="" label="Модуль Заказать обратный звонок" />
+			<field name="module_2" type="text" maxlength="3" required="true" default="" label="Модуль Мини баннеры" />
+		</fieldset>
+		<fieldset name="links" label="Ссылки">
+			<field name="delivery_url" type="url" required="true" label="Ссылка на страницу Доставка" />
+			<field name="discounts_url" type="url" required="true" label="Ссылка на страницу Программа лояльности" />
+			<field name="vk_url" type="url" required="true" label="Ссылка на группу ВКонтакте" />
+		</fieldset>
+		<fieldset name="images" label="Картинки">
+			<field name="vk_icon" type="url" required="true" label="Ссылка на иконку ВКонтакте" />
+			<field name="discount_card_icon" type="url" required="true" label="Ссылка на картинку Дисконтной карты" />
+		</fieldset>
+	</fields>
+</form>

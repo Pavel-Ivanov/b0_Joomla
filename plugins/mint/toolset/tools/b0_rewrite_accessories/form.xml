@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="b0_rewrite_accessories" addfieldpath="/libraries/mint/forms/fields" label="Перезапись полей в Аксессуарах"
+              description="Запустите инструмент">
+        <field name="search_limit_number" type="text" default="0" label="Количество записей"
+               description="Если 0, то все записи"/>
+    </fieldset>
+</form>

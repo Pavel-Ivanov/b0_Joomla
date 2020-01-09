@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>Default</name>
+	<author>MintJoomla</author>
+	<creationDate>Febrary 2012</creationDate>
+	<copyright>Copyright (C) 2005 - 2012 MintJoomla. All rights reserved.</copyright>
+	<license>Commercial (http://www.mintjoomla.com/commercial-license)</license>
+	<authorEmail>support@mintjoomla.com</authorEmail>
+	<authorUrl>www.mintjoomla.com</authorUrl>
+	<version>8.49</version>
+	<description>Template Category select</description>
+
+	<fields name="tmpl_params">
+		<fieldset name="general" label="General">
+			<field name="item_grouping_type" type="list" label="X_GROUPTIPE"  default="1">
+				<option value="0">X_GRONOTGROUP</option>
+				<option value="1">X_GROTABS</option>
+				<option value="2">X_GRESLID</option>
+				<option value="3">X_GROFIELDSET</option>
+			</field>
+			<field name="title_tag" label="Title tag" type="text" size="3" default="h1"  />
+			<field name="css" type="textarea" rows="10" cols="39"  default="" label="X_CUSTOMCSS" />
+			<field name="show_groupdescr" type="radio" class="btn-group" default="1" label="X_SHOWGROUPDES">
+				<option value="0">CNO</option>
+				<option value="1">CYES</option>
+			</field>
+			<field name="show_groupicon" type="radio" class="btn-group" default="1" label="X_SHOWGROUPICON">
+				<option value="0">CNO</option>
+				<option value="1">CYES</option>
+			</field>
+		</fieldset>
+		<fieldset name="tabs" label="FS_TABSSET" description="FS_TABSSETDESCR">
+			<field name="tabs_position" type="list" label="X_TABSPOS"  default="">
+				<option value="">X_TABSPOS1</option>
+				<option value="tabs-below">X_TABSPOS2</option>
+				<option value="tabs-left">X_TABSPOS3</option>
+				<option value="tabs-right">X_TABSPOS4</option>
+			</field>
+			<field name="tabs_style" type="list" label="X_TABSSTYLE"  default="1">
+				<option value="nav-tabs">X_TABSSTYLE1</option>
+				<option value="nav-pills">X_TABSSTYLE2</option>
+			</field>
+
+		</fieldset>
+	</fields>
+
+	<fields name="tmpl_core">
+		<fieldset name="general2" label="CFORMAT">
+			<field name="item_time_format" type="list" default="l, F d, Y" label="CDATEFORMAT" >
+				<option value="l, d F Y">Tuesday, 30 December 2007</option>
+				<option value="d F Y">30 December 2007</option>
+				<option value="d M Y">30 Dec 2007</option>
+				<option value="M d, Y">Dec 30, 2007</option>
+				<option value="d.m.y">30.12.07</option>
+				<option value="m-d-y">30-12-07</option>
+			</field>
+			<field name="bookmark_icons" label="X_ICONBOOKMARK" type="folderlist" hide_none="1" hide_default="1" default="star" directory="media/mint/icons/bookmarks"  />
+		</fieldset>
+
+		<fieldset name="elements" label="CRECORDELEM">
+			<field name="item_print" type="radio" class="btn-group" default="1" label="CPRINTICON" >
+				<option value="0">CNO</option>
+				<option value="1">CYES</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>
