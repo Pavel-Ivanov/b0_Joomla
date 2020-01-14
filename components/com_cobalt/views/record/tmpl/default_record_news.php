@@ -52,7 +52,7 @@ $paramsRecord = $this->tmpl_params['record'];
 	<p class="uk-article-meta">
 		<?php $post->renderCTime();?>
 	</p>
-    <div itemprop="articleBody" <?= (isset($post->image)) ? 'style="min-height: 310px;"' : ''; ?>>
+    <div itemprop="articleBody">
 	    <?php $post->renderImage();?>
 	    <?php $post->renderBody();?>
     </div>
@@ -65,7 +65,7 @@ $paramsRecord = $this->tmpl_params['record'];
     <noindex>
         <div>{module <?= $paramsRecord->get('tmpl_core.module_mini_banners');?>}</div>
         <footer class="uk-panel uk-panel-box uk-panel-box-secondary uk-margin-large-top">
-            <div class="uk-flex uk-flex-middle uk-flex-space-between">
+            <div class="uk-flex uk-flex-middle uk-flex-space-between uk-flex-wrap">
                 <div class="uk-text-small">
 			        <?php $post->renderHits();?>
                 </div>

@@ -70,7 +70,6 @@ $current_user = JFactory::getUser($this->input->getInt('user_id', $this->user->g
             <div class="uk-width-small-1-1">
                 <h1>
                     <?= $this->escape(JText::_($this->title)); ?>
-                    <?= CEventsHelper::showNum('section', $this->section->id, TRUE);?>
                 </h1>
             </div>
             <!-- Описание раздела -->
